@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="oneHandedModeOptionsArray">
+        <item>Automatically Detect</item>
+        <item>Left Hand</item>
+        <item>Right Hand</item>
+        <item>Neutral</item>
+    </string-array>
+    <string-array name="oneHandedModeValuesArray">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    
+    <string-array name="sideSwipeOptionsArray">
+        <item>Filters</item>
+        <item>Layers</item>
+        <item>Settings</item>
+    </string-array>
+    <string-array name="sideSwipeValuesArray">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    
+    <string-array name="allSourcesOptionsArray">
+        <item>Most Recent</item>
+        <item>Most Reputable</item>
+        <item>Real Time</item>
+    </string-array>
+    <string-array name="allSourcesValuesArray">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    
+</resources>

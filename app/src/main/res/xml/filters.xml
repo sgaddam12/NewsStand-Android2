@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+  <PreferenceCategory
+    android:title="@string/topics_title"
+    android:key="pref_topics">
+	<CheckBoxPreference
+	    android:key="filter_all_topics"
+	    android:title="All"
+	    android:defaultValue="true"
+	    android:disableDependentsState="true"/>   
+	 <CheckBoxPreference
+	    	android:key="filter_topic_general"
+	    	android:title="General"
+	    	android:defaultValue="false"
+	    	android:dependency="filter_all_topics"
+	    	android:icon="@drawable/marker_general_original"/>
+	  <CheckBoxPreference
+	    	android:key="filter_topic_business"
+	    	android:title="Business"
+	    	android:defaultValue="false"
+	    	android:dependency="filter_all_topics"
+	    	android:icon="@drawable/marker_business_original"/>
+	  <CheckBoxPreference
+	    	android:key="filter_topic_entertainment"
+	    	android:title="Entertainment"
+	    	android:defaultValue="false"
+	    	android:dependency="filter_all_topics"
+	    	android:icon="@drawable/marker_entertainment_original"/>
+	  <CheckBoxPreference
+	    	android:key="filter_topic_health"
+	    	android:title="Health"
+	    	android:defaultValue="false"
+	    	android:dependency="filter_all_topics"
+	    	android:icon="@drawable/marker_health_original"/>
+	  <CheckBoxPreference
+	    	android:key="filter_topic_scitech"
+	    	android:title="SciTech"
+	    	android:defaultValue="false"
+	    	android:dependency="filter_all_topics"
+	    	android:icon="@drawable/marker_scitech_original"/>
+	  <CheckBoxPreference
+	    	android:key="filter_topic_sports"
+	    	android:title="Sports"
+	    	android:defaultValue="false"
+	    	android:dependency="filter_all_topics"
+	    	android:icon="@drawable/marker_sports_original"/>
+  </PreferenceCategory>
+  
+  <PreferenceCategory
+      android:title="Number of Images">
+	  <Preference
+	      android:title="No filter"
+	      android:key="filter_num_images"
+	      android:defaultValue="0">
+	  </Preference>
+  </PreferenceCategory>
+  
+   <PreferenceCategory
+      android:title="Number of Videos">
+	  <Preference
+	      android:title="No filter"
+	      android:key="filter_num_videos"
+	      android:defaultValue="0">
+	  </Preference>
+  </PreferenceCategory>
+ </PreferenceScreen>

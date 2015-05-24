@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:descendantFocusability="blocksDescendants"
+        >
+
+    <LinearLayout
+            android:id="@+id/dialogLangRowThumbnail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip">
+
+        <ImageView
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:id="@+id/dialogLangRowThumbnailImage"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                />
+    </LinearLayout>
+
+    <TwoLineListItem
+            android:layout_toRightOf="@+id/dialogLangRowThumbnail"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:minHeight="?android:attr/listPreferredItemHeight"
+            android:mode="twoLine"
+            >
+
+        <TextView
+                android:id="@+id/dialogLangRowTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_alignTop="@+id/dialogLangRowThumbnail"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <TextView
+                android:id="@+id/dialogLangRowSubtitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dialogLangRowTitle"
+                android:layout_toRightOf="@+id/dialogLangRowThumbnail"
+                android:textColor="?android:attr/textColorSecondaryInverse"
+                android:textAppearance="?android:attr/textAppearanceSmall"/>
+    </TwoLineListItem>
+
+    <CheckBox
+            android:id="@+id/dialogLangRowCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:alpha="50"
+            android:focusable="false"
+            android:clickable="false"
+
+            />
+
+
+</RelativeLayout>

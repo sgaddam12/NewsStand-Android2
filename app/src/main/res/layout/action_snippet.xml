@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+         >
+
+    <Button
+            android:id="@+id/snippetBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            style="?android:attr/actionButtonStyle"
+            android:paddingLeft="0dip"
+            android:drawableLeft="@drawable/ic_action_back"
+            android:layout_alignParentLeft="true"
+            android:clickable="true"
+            />
+
+    <Button
+            android:id="@+id/snippetTitleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            />
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+        <ImageButton
+                android:id="@+id/snippetUpButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_navigate_up"
+                style="?android:attr/actionButtonStyle"
+                android:visibility="gone"
+                />
+
+        <ImageButton
+                android:id="@+id/snippetDownButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_navigate_down"
+                style="?android:attr/actionButtonStyle"
+                android:visibility="gone"
+                />
+    </LinearLayout>
+
+
+</RelativeLayout>

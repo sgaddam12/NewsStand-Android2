@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+        >
+
+    <RelativeLayout
+            android:id="@+id/infoWindowRelativeLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundcorners"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:scaleType="fitXY"
+            android:alpha=".85"
+            android:visibility="visible">
+
+        <LinearLayout
+                android:id="@+id/infoWindowTextLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+        >
+            <LinearLayout
+                    android:id="@+id/infoWindowTextLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+
+                    >
+
+                <TextView
+                        android:id="@+id/infoWindowTitle"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="A very long location nameeeee"
+                        android:layout_gravity="center_horizontal"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"/>
+                />
+
+                <TextView
+                        android:id="@+id/infoWindowSubtitle"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:maxLines="1"
+                        android:text="text tsdjfksdjkf jdkfjksdj fkl"
+                        android:textColor="#FFFFFF"
+                        android:ellipsize="end"
+                        android:textStyle="normal"/>
+            </LinearLayout>
+
+            <ImageView
+                    android:id="@+id/infoWindowImage"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/ic_action_navigate_right"
+                    android:layout_centerVertical="true"
+                    android:layout_weight="0"
+                    android:layout_toRightOf="@+id/infoWindowTextLayout"
+                    />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

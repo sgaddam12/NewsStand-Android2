@@ -1,0 +1,57 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/menu_layers"
+        android:title="@string/menu_layers"
+        android:orderInCategory="1"
+		android:icon="@drawable/ic_action_layers"
+        android:showAsAction="ifRoom" />
+    <item android:id="@+id/menu_search_key"
+        android:title="@string/menu_search_key"
+        android:orderInCategory="2"
+        android:showAsAction="always"
+        android:icon="@drawable/action_search_holo_dark"
+        />
+    <item android:id="@+id/menu_mode"
+          android:title="@string/menu_mode"
+          android:orderInCategory="3"
+          android:showAsAction="always"
+          android:icon="@drawable/ic_action_mode"
+          />
+    <item android:id="@+id/menu_sources"
+        android:title="@string/menu_sources"
+        android:orderInCategory="4"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_action_newspaper"
+        />
+    <item android:id="@+id/menu_top_stories"
+        android:title="@string/menu_top_stories"
+        android:orderInCategory="5"
+        android:icon="@drawable/ic_action_list"
+        android:showAsAction="always" />
+    <item
+        android:id="@+id/menu_about"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menu_about" />
+    <item
+        android:id="@+id/menu_filters"
+        android:orderInCategory="101"
+        android:showAsAction="never"
+        android:title="@string/menu_filters"
+        />   
+    <item
+        android:id="@+id/menu_settings"
+        android:orderInCategory="102"
+        android:showAsAction="never"
+        android:title="@string/menu_settings"
+        /> 
+    <item android:id="@+id/locateMenuItem"
+        android:title="Locate"
+        android:orderInCategory="2"
+        android:visible="false"
+        android:icon="@drawable/action_search_world_holo_dark"
+        android:hint="@string/locate_hint"
+        android:showAsAction="ifRoom|collapseActionView"
+        android:actionViewClass="android.widget.SearchView"
+        android:voiceSearchMode="showVoiceSearchButton|launchRecognizer"
+        />
+</menu>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="neutral_zoom_right">43dip</dimen>
+    <dimen name="neutral_refresh_left">35dip</dimen>
+    <dimen name="leftHand_zoomIn_right">98dip</dimen>
+    <dimen name="leftHand_zoomOut_right">63dip</dimen>
+    <dimen name="leftHand_refresh_left">35dip</dimen>
+    <dimen name="rightHand_zoomIn_left">98dip</dimen>
+    <dimen name="rightHand_zoomOut_left">63dip</dimen>
+    <dimen name="rightHand_refresh_right">35dip</dimen>
+
+    <dimen name="segmented_control_default_height">41dp</dimen>
+</resources>

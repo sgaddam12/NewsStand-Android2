@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+    >
+
+    <LinearLayout
+        android:id="@+id/sourcesRowThumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip">
+
+        <ImageView
+            android:gravity="center_vertical"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/sourcesRowThumbnailImage"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <TwoLineListItem
+        android:layout_toRightOf="@+id/sourcesRowThumbnail"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:mode="twoLine"
+        >
+
+        <TextView
+            android:id="@+id/sourcesRowTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_alignTop="@+id/sourcesRowThumbnail"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <TextView
+            android:id="@+id/sourcesRowSubtitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sourcesRowTitle"
+            android:layout_toRightOf="@+id/sourcesRowThumbnail"
+            android:textColor="?android:attr/textColorSecondaryInverse"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+    </TwoLineListItem>
+
+    <ImageButton
+        android:id="@+id/sourcesRowCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_navigation_cancel_holo_light"
+        android:background="?android:attr/selectableItemBackground"
+        android:alpha="50"
+        />
+
+
+</RelativeLayout>

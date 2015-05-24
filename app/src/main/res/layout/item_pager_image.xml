@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent"
+             android:padding="1dip" >
+
+   <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <edu.umd.umiacs.newsstand.imageview.ImageViewZoom.ImageViewTouch
+        android:id="@+id/pager_image"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:contentDescription="@string/descr_image"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:id="@+id/imageCaption"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:lines="2"
+        android:textColor="@color/white"
+        android:shadowColor="@color/black"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="5"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginBottom="14dip"
+        android:layout_alignParentBottom="true"
+        />
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+
+
+</FrameLayout>

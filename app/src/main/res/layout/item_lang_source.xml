@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/white"
+    >
+
+    <TwoLineListItem
+        android:paddingTop="2dip"
+        android:paddingBottom="2dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?android:attr/listPreferredItemHeight"
+        android:mode="twoLine"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:id="@+id/langSourcesRowTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dip"
+            android:layout_marginTop="6dip"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <TextView
+            android:id="@+id/langSourcesRowSubtitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/langSourcesRowTitle"
+            android:layout_alignLeft="@+id/langSourcesRowTitle"
+            android:textColor="?android:attr/textColorSecondaryInverse"
+            android:textAppearance="?android:attr/textAppearanceSmall"/>
+    </TwoLineListItem>
+
+    <ImageButton
+        android:id="@+id/langSourcesRowCancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_navigation_cancel_holo_light"
+        android:background="?android:attr/selectableItemBackground"
+        android:alpha="50"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/imageRelativeLayout"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent">
+
+    <GridView
+        android:id="@+id/imageGridview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:horizontalSpacing="1dip"
+        android:numColumns="auto_fit"
+        android:columnWidth="85dip"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="1dip"
+        android:padding="1dip"
+        android:background="@color/white"/>
+
+    <ImageButton
+        android:id="@+id/imageEnlargedBackground"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:background="@color/black"
+        android:alpha=".5"
+        android:visibility="gone"
+        />
+
+    <ImageButton
+        android:id="@+id/imageEnlargedImage"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="50dip"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:background="@null"
+        android:visibility="gone"
+        />
+
+    <ImageButton
+        android:id="@+id/oldImageEnlargedImage"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_margin="50dip"
+        android:layout_centerInParent="true"
+        android:scaleType="fitXY"
+        android:background="@null"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/imageEnlargedCaption"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:lines="2"
+        android:textColor="@color/white"
+        android:shadowColor="@color/black"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="5"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginBottom="14dip"
+        android:gravity="center_horizontal"
+        />
+    <ProgressBar
+        android:id="@+id/imageProgressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"/>
+</RelativeLayout>

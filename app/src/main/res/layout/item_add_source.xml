@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+    >
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/addSourceCellText"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:textAppearance="?android:attr/textAppearanceMedium"
+              android:textStyle="bold"
+              android:gravity="center"
+              android:paddingLeft="6dip"
+              android:minHeight="?android:attr/listPreferredItemHeight"
+              android:background="@color/white"
+        />
+
+</RelativeLayout>

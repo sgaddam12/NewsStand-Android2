@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+  <PreferenceCategory
+	android:title="Home Location">
+	<CheckBoxPreference 
+	    android:key="pref_setCurrentMapHome"
+		android:title="Set Current Map to Home"/>
+  </PreferenceCategory>
+  <PreferenceCategory
+  	android:title="One-Handed Mode">
+    <ListPreference
+            android:key="pref_oneHandMode"
+            android:dialogTitle="One-Handed Mode Type"
+            android:entries="@array/oneHandedModeOptionsArray"
+            android:entryValues="@array/oneHandedModeValuesArray" 
+            android:defaultValue="0" />
+  </PreferenceCategory>
+  </PreferenceScreen>
+   

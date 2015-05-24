@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_image_share"
+          android:title="@string/share"
+          android:icon="@drawable/ic_action_share"
+          android:showAsAction="ifRoom"
+          android:actionProviderClass="android.widget.ShareActionProvider"
+          android:orderInCategory="1"
+        />
+
+    <item android:id="@+id/image_moreTopic"
+          android:title="@string/moreInTopic"
+          android:showAsAction="ifRoom"
+          android:orderInCategory="2"
+          android:visible="false"
+          />
+
+    <item android:id="@+id/image_enlargeImage"
+          android:title="@string/enlarge"
+          android:orderInCategory="3"
+          android:icon="@drawable/ic_action_enlarge_image"
+          android:showAsAction="ifRoom" />
+</menu>

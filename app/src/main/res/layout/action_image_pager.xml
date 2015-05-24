@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+        >
+
+    <Button
+            android:id="@+id/imagePagerBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            style="?android:attr/actionButtonStyle"
+            android:paddingLeft="0dip"
+            android:drawableLeft="@drawable/ic_action_back"
+            android:layout_alignParentLeft="true"
+            android:clickable="true"
+            />
+
+
+    <Button
+            android:id="@+id/imagePagerTitleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:background="@android:color/transparent"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            />
+
+    <ImageButton
+            android:id="@+id/imagePagerArticleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:contentDescription="@string/source"
+            style="?android:attr/actionButtonStyle"
+            android:src="@drawable/ic_action_article"
+            android:visibility="visible"
+            />
+</RelativeLayout>

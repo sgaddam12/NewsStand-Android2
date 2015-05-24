@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:descendantFocusability="blocksDescendants"
+                android:paddingBottom="4dip"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:paddingTop="4dip">
+
+    <ImageView
+        android:id="@+id/videoPreviewImage"
+        android:layout_width="160dip"
+        android:layout_height="120dip"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/video_preview_image"
+        android:src="@drawable/item_video_load"/>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="4dip"
+        android:layout_toRightOf="@id/videoPreviewImage">
+
+        <TextView
+            android:id="@+id/videoTitleText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:singleLine="false"
+            android:text="This is a long text string etcccc cccccccc cc dsf ds sdsfd f"
+            android:textIsSelectable="false"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/videoDurationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/videoTitleText"
+            android:singleLine="true"
+            android:text="01:24"
+            android:textIsSelectable="false"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/videoPubDateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/videoDurationText"
+            android:singleLine="true"
+            android:text="5 days 14 hours ago"
+            android:textIsSelectable="false"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/videoSourceNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/videoPubDateText"
+            android:layout_toRightOf="@id/videoPreviewImage"
+            android:singleLine="true"
+            android:text="CNN"
+            android:textColor="@color/dark_green"
+            android:textIsSelectable="false"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

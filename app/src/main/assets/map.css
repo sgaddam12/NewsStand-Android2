@@ -1,0 +1,19 @@
+span.georef {
+    color: blue;
+    font-weight: bold;
+}
+
+span.disease {
+    color: red;
+    font-weight: bold;
+}
+
+span.keyword {
+    color: green;
+    font-weight: bold;
+}
+
+span.people {
+    color: green;
+    font-weight: bold;
+}

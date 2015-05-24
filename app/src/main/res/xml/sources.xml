@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+  <PreferenceCategory
+	android:title="All Sources">
+	<ListPreference 
+	    android:key="pref_allSources"
+	    android:dialogTitle="Most Recent"
+	    android:entries="@array/allSourcesOptionsArray"
+        android:entryValues="@array/allSourcesValuesArray" 
+        android:defaultValue="0" />
+  </PreferenceCategory>
+  
+  <PreferenceCategory 
+      android:title="Filter Feeds" >
+  <Preference
+      android:title="Add Feed Filter"
+      android:key="filter_feed_sources_button" />
+  <Preference
+      android:title="No feed filters"
+      android:enabled="false"
+      android:selectable="false"
+      android:key="filter_feedSources"/>
+  </PreferenceCategory>
+</PreferenceScreen>
+   
